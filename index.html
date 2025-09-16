@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>French Poem Generator</title>
     <h1>AI French Poem Generator</h1>
   </head>
   <body>
     <div class="content">
       <main>
-        <form>
+        <form id="poem-form">
           <input
             type="text"
             placeholder="Enter the topic of the French Poem"
@@ -21,15 +22,7 @@
           />
           <input type="submit" class="click-submit" />
         </form>
-        <div class="poem">
-          Le Papillon Le papillon danse,
-          <br />
-          Sur la fleur il s’élance,
-          <br />
-          Le vent léger le guide,
-          <br />
-          Dans le ciel il se décide.
-        </div>
+        <div class="poem" id="poem-format"></div>
       </main>
       <footer>
         This AI project was coded by
