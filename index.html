@@ -12,19 +12,22 @@
   <body>
     <div class="content">
       <main>
-        <form id="poem-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the French Poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="information"
-            id="user-stipulations"
-          />
-          <input type="submit" class="click-submit" />
-        </form>
-        <div class="poem" id="poem-format"></div>
+        <div class="form-wrapper">
+          <form id="poem-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of a French Poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="information"
+              id="user-stipulations"
+            />
+            <input type="submit" class="click-submit" />
+          </form>
+          <div class="example">i.e: Water, City, Cheese</div>
+        </div>
+        <div class="poem hidden" id="poem-format"></div>
       </main>
       <footer>
         This AI project was coded by

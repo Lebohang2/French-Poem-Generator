@@ -12,12 +12,12 @@ h1 {
 .content {
   text-align: center;
 }
-
-form {
+.form-wrapper {
   padding: 30px 15px;
   border-radius: 15px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
+  padding: 15px 20px;
 }
 
 .information {
@@ -49,10 +49,31 @@ form {
   border-left: 3px solid #a159c5;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.03);
 }
+.hidden {
+  display: none;
+}
 
 footer {
   text-align: center;
   color: #a159c5;
   font-size: 14px;
   margin-top: 30px;
+}
+.example {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+  margin-right: 311px;
+  padding: 8px;
+}
+
+.twitch {
+  animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

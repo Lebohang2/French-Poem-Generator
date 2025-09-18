@@ -18,6 +18,10 @@ function searchPoem(event) {
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let displayPoem = document.querySelector("#poem-format");
+  displayPoem.classList.remove("hidden");
+  displayPoem.innerHTML = `<div class="twitch">⏳Generating a French poem about ${stipulationElement.value}</div>`;
+
   axios.get(apiUrl).then(showPoem);
 }
 
